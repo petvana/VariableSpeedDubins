@@ -81,7 +81,7 @@ void VarSpeedDubins::Solver::solveAll(){
 		pathClass = cand[0];
 		pathType = cand[1];
 		pathOrientation = cand[2];
-		vsdcand.set_turnRadii(0.3, 1.0);
+		vsdcand.set_turnRadii(m_vsdprob.get_r(), m_vsdprob.get_R());
 		vsdcand.set_pathClass(pathClass);
 		vsdcand.set_pathType(pathType);
 		vsdcand.set_pathOrientation(pathOrientation);
